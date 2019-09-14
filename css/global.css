@@ -1,0 +1,293 @@
+/* ----- Global ----- */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: AvenirDemi, Avenir, Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+}
+
+/* --- Text ----- */
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #6A9325;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #6A9325;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #66C9D8;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4F5151;
+    line-height: 1.7rem;
+}
+
+/* knapper */
+.btn-outline { /* knappen i header og nyhets seksjonene */
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: block;
+    text-decoration: none;
+    color: #6A9325;
+    border: 2px solid #6A9325;
+    border-radius: 6px;
+    width: 175px;
+    line-height: 53px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    color: #FFF;
+    background-color: #6A9325;
+}
+
+.btn-fill { /* knappen i call to action */
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #6A9325;
+    border: 2px solid #6A9325;
+    border-radius: 6px;
+    width: 175px;
+    line-height: 53px;
+    transition: 0.3s;   
+}
+
+.btn-fill:hover {
+    background-color: #D94BBE;
+    border: 2px solid #D94BBE;
+}
+
+/* ----- Nav ----- */
+header nav {
+    display: flex;
+    align-items: center; /* sentrerer teksten vertikalt */
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    padding: 10px 5% 5px;
+    background-color: white;
+    box-shadow: 0 0 15px -12px #4F5151;
+}
+
+header nav .nav-lenke {
+    margin-left: 40px; /* lager luft for lenkene i navigasjons menyen */
+}
+
+header nav a {
+    color: #363636;
+    font-size: 1.4rem;
+    text-decoration: none;  
+}
+
+header nav a:hover { 
+    color: #6A9325;
+}
+
+header span { /* gjør visse ord rosa */
+    color: #D94BBE;
+}
+
+.logo-link {
+    margin-right: auto; /* setter lenkene til høyre på skjermen vekk fra logoen */
+}
+
+.logo {
+    height: 65px;
+}
+
+.active { /* gjør den enkelte sides knapp i menyen grønn når man er på den siden */
+    color: #6A9325;
+}
+
+.medlem-btn {
+    display: block;
+    text-decoration: none;
+    color: #6A9325;
+    border: 2px solid #6A9325;
+    border-radius: 6px;
+    padding: 8px 10px;
+    text-align: center;
+    transition: width, a, background-color 0.5s;
+}
+
+.medlem-btn:hover {
+    color: white;
+    background-color: #6A9325;
+}
+
+/* dropdown i nav */
+.dropdown { /* boksen rundt dropdown knappen */
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn { /* selve dropdown knappen */
+    color: #363636;
+    background-color: white;
+    font-size: 1.4rem;
+    border: none;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.dropbtn .fa {
+    width: 13px;
+}
+
+.dropdown-content { /* det som dukket opp når det dropper ned */
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    margin-left: 20px;
+    padding-top: 27px;
+}
+  
+.dropdown-content a { /* linkene i dropdown */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #efefef;
+}
+  
+.dropbtn:hover {
+    color: #6A9325;
+}
+
+.dropdown-content a:hover {
+    color: #6A9325;
+    background-color: white;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* searchbar i nav */
+header form {
+    margin-left: 40px;
+}
+
+form.searchbar  {
+    position: relative;
+
+    /* setter sirkelen rundt ikonet */
+    width: 47px;
+    height: 47px;
+    border-radius: 25px;
+    border: 2px solid #363636;
+    
+    transition: width 0.5s;
+}
+
+.searchbar input { /*søkefeltet */
+    position: absolute;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+    /* fjerner søkefeltet frem til hover */
+    display: none; 
+}
+
+form .fa { /* søke ikonet */
+    /* plasserer ikonet*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px; 
+    width: 42.5px;
+    height: 42.5px;
+
+    border-radius: 50%;
+    color: #363636;
+    text-align: center;
+    font-size: 1.2em;
+    transition: height 0.5s;
+}
+
+form.searchbar:hover {
+    width: 200px; /* gjør søkebaren lang på hover */
+    cursor: pointer;
+    border: 2px solid  #6A9325;
+}
+
+form.searchbar:hover input {
+    display: block; /* legger inn søkefeltet på hover */
+}
+
+form.searchbar:hover .fa {
+    color: #6A9325;
+}
+
+/* ----- Footer ----- */
+footer {
+    padding: 0 5%;
+
+    /* gir litt høyde og luft til footer */
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.footer-lenker {
+    display: inline-block;
+}
+
+.footer-lenker a {
+    text-decoration: none;
+    color: #6A9325;
+    padding: 10px 30px 10px 10px;
+    font-weight: 500;
+}
+
+.footer-lenker a:hover { /* endrer fargen på TEKST LENKENE i footer når du hovrer */
+    color: #D94BBE;
+}
+
+.footer-ikoner {
+    float: right; /* sender ikonene i footer til høyre */
+}
+
+.footer-ikoner a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #6A9325;
+    padding: 10px 30px 10px 10px;
+    font-weight: 500;
+}
+
+.footer-ikoner a:hover { /* endrer fargen på IKONENE i footer når du hovrer */
+    color: #66C9D8;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Informasjon - Miljøpartiet De Grønne</title>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/medlem.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../favicon.png" type="favicon" sizes="16x16">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav id="nav">
+            <a class="logo-link" href="../index.html">
+                <img class="logo" src="../images/Miljoepartiet_de_groenne_logo.svg" alt="Miljøpartiets logo"
+                    title="logo">
+            </a>
+            <a class="nav-lenke" href="./politikk.html">Politikk</a>
+            <a class="nav-lenke" href="./partiet.html">Partiet</a>
+            <div class="dropdown">
+                <button class="dropbtn">Der du bor <i class="fa fa-caret-down" aria-hidden="true"></i> </button>
+                <div class=" dropdown-content">
+                    <a href="">Agder</a>
+                    <a href="">Innlandet</a>
+                    <a href="">Nordland</a>
+                    <a href="">Oslo</a>
+                    <a href="">Rogaland</a>
+                    <a href="">Troms og Finnmark</a>
+                    <a href="">Trøndelag</a>
+                    <a href="">Vestfold og Telemark</a>
+                    <a href="">Vestland</a>
+                    <a href="">Viken</a>
+                </div>
+            </div>
+            <div class="medlem">
+                <a class="nav-lenke medlem-btn" href="./medlem.html">Bli medlem</a>
+            </div>
+
+            <form class="searchbar">
+                <input type="search" placeholder="søk..">
+                <i class="fa fa-search"></i>
+            </form>
+        </nav>
+    </header>
+
+    <!-- Innhold -->
+    <main>
+        <section>
+            <section class="form-container">
+                <!-- Innsendingskjemaet -->
+                <h4>Vi tar kontakt så med deg fort som mulig</h4>
+                <form>
+
+                    <div>
+                        <p>Fornavn*:</p>
+                        <input required type="text" name="fornavn" placeholder="Fornavn">
+                    </div>
+
+                    <div>
+                        <p>Etternavn:</p>
+                        <input type="text" name="etternavn" placeholder="Etternavn">
+                    </div>
+
+                    <div>
+                        <p>E-mail*:</p>
+                        <input required type="mail" name="etternavn" placeholder="E-post">
+                    </div>
+
+                    <div>
+                        <p>Telefon:</p>
+                        <input type="number" name="etternavn" placeholder="Ditt nummer">
+                    </div>
+
+                    <div class="radio-container">
+                        <h5>Jeg ønsker:</h5>
+                        <label class="radio-btns">
+                            Å stille et spørsmål
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="radio-btns">
+                            Å bli medlem
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="radio-btns">
+                            Å være frivllig
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </section>
+
+            <section class="info-container">
+                <!-- Flere kategorier med informasjons -->
+                <article class="ugle-container">
+                    <div>
+                        <h2>Noe du <span>lurer</span> på?</h2>
+                        <p>Send oss en melding gjennom skjemaet eller send en mail til post@post.no. Du kan også ringe
+                            oss
+                            på: 11 22 33 44.</p>
+                        <p>Vi holder til i Navnegate 19, 0182 Oslo</p>
+                    </div>
+                </article>
+                <article>
+                    <article>
+                        <h2>Informasjon om <span>medlemskap</span></h2>
+                        <p>Når du registrerer deg som medlem blir dine opplysninger oppført i Miljøpartiet De Grønnes
+                            medlemsregister. Du aksepterer å bli kontaktet av partiet via epost, sms og andrekanaler du
+                            har oppgitt.</p>
+                        <p>Personopplysningene blir stående i to år med ubetalt kontingent før de blir fjernet.Melder du
+                            deg aktivt ut blir opplysningene fjernet umiddelbart.</p>
+                    </article>
+                    <article>
+                        <h2>Informasjon om å være <span>frivllig</span></h2>
+                        <p>Ved å huke av “Være frivillig” melder du din interesse for å være aktiv i partiet. Vivil
+                            kontakte deg for å høre hvordan du ønsker å engasjere deg i partiet. </p>
+                        <p>Når du melder deg som frivillig i partiet vil det lagres i støttespillerdatabasen vår.Vi vil
+                            behandle informasjon om din aktivitet og hvordan du ønsker å engasjere deg somfrivillig i
+                            partiet. Du kan lese mer om hvordan vi behandler opplysninger om vårefrivillige i
+                            støttespillerdatabasen vår i personvernerklæring.</p>
+                    </article>
+                    <article>
+                        <h2>Informasjon om <span>donering</span></h2>
+                        <p>Du kan enten vippes til 13124 eller sette inn direkte på vår konto; 1234.12.54321. Visette
+                            stor pris på all støtte. En støtte til oss er en støtte for fremtiden.</p>
+                    </article>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer - innhold nederst på siden -->
+    <footer>
+        <div class="footer-lenker">
+            <a href="./politikk.html">Politikk</a>
+            <a href="./partiet.html">Partiet</a>
+            <a href="./medlem.html">Kontakt oss</a>
+        </div>
+        <div class="footer-ikoner">
+            <a href="https://www.facebook.com/miljopartietdegronne" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/Partiet?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"
+                class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/degronne/" target="_blank" class="fa fa-instagram"></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

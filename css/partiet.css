@@ -1,0 +1,23 @@
+#om-container {
+    margin: 10em 10% 0; /* legger til marg på sidene av skjermen */
+}
+
+#om-container p { /* brødteksten */
+    /* skaper luft */
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#om-container h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+#om-contaiener .img-container { /* boksen rundt bildet */
+    max-width: 1920px;
+}
+
+#om-container .img-container img { /* selve bildet */
+    width: 100%;
+    padding: 2em 0 1em 0;
+}
